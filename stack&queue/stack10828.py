@@ -1,4 +1,4 @@
-stack=[]
+stack=[] #pypy
 top=-1
 
 def push(x):

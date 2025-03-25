@@ -2,7 +2,7 @@ n=int(input())
 stack=[]
 top=-1
 cal=[]
-arr=[] #수열열
+arr=[] #수열
 
 def push(x):
   global top, stack, cal
