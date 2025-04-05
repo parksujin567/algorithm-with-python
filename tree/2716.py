@@ -5,7 +5,17 @@ class Node:
     self.right=right
   
 class Tree:
-  def __init__(self, arr):
+  def __init__(self):
     self.root=Node("root")
     
+n=int(input())
+inst=[]
+for _ in range(n):
+  inst.append(input())
+
+for i in range(n):
+  if len(inst[i])==0:
+    print(1)
+  else: print(len(inst[i]))
+
 
