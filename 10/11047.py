@@ -1,13 +1,12 @@
-inst=list(map(int, input().split()))
+n, k=map(int, input().split())
 coins=[]
-sum=0
-for _ in range(inst[0]):
+for _ in range(n):
   coins.append(int(input()))
+coins.reverse()
 
-i=len(coins)
-while i!=0:
-  i-=1
-  sum+=inst[1]//coins[i]
-  inst[1]%=coins[i]
+sum=0
+for i in range(n):
+  sum+=k//coins[i]
+  k%=coins[i]
 
 print(sum)
